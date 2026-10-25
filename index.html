@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Space Note</title>
+<style>
+  :root { --bg:#f7f9fc; --card:#ffffff; --text:#1c2430; --muted:#5a6676; --accent:#5b8fc7; --line:#dfe6ef; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: Georgia, "Gelasio", serif; font-size:18px; line-height:1.65;
+         display:flex; min-height:100vh; align-items:center; justify-content:center; padding:24px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px;
+          padding:36px 28px; max-width:560px; width:100%; text-align:center; }
+  h1 { font-size:1.9rem; margin:0 0 6px; }
+  .tagline { color:var(--muted); margin:0 0 24px; }
+  p { margin: 0 0 18px; }
+  .links { display:flex; flex-direction:column; gap:12px; margin-top:26px; }
+  .links a { display:block; padding:12px 18px; border-radius:10px; text-decoration:none;
+             border:1px solid var(--accent); color:#2f6ba8; background:#fff; }
+  .links a.primary { background:var(--accent); color:#fff; }
+  footer { color:var(--muted); font-size:0.85rem; margin-top:28px; }
+  a.mail { color:#2f6ba8; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Space Note</h1>
+    <p class="tagline">Личные заметки, которые остаются только на твоём телефоне</p>
+
+    <p>Текстовые заметки, списки, аудио, фото и видео, папки и скрытые папки под паролем.
+    Без аккаунтов, без серверов, без рекламы. Всё хранится на устройстве.</p>
+
+    <div class="links">
+      <a class="primary" href="privacy.html">Политика конфиденциальности · Privacy Policy · Gizlilik Politikası</a>
+      <!-- Когда приложение появится в Google Play, раскомментируй строку ниже и вставь ссылку:
+      <a href="ССЫЛКА_НА_GOOGLE_PLAY">Google Play</a>
+      -->
+    </div>
+
+    <footer>
+      Связь: <a class="mail" href="mailto:ПОЧТА@ПРИМЕР.COM">ПОЧТА@ПРИМЕР.COM</a>
+    </footer>
+  </div>
+</body>
+</html>
